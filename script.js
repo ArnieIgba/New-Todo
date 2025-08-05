@@ -43,20 +43,4 @@ todo.addEventListener('keypress', function (event) {
 	}
 });
 
-function saveTasksToArray() {
-	const allListedTasks = [];
-	const taskItems = task_list.getElementsByClassName('task_item');
-
-	for (let i = 0; i < taskItems.length; i++) {
-		const listedTask = {
-			text: taskItems[i].textContent,
-		};
-		allListedTasks.push(listedTask);
-	}
-	return allListedTasks;
-}
-
-function saveToLocalStorage() {
-	const savingTasks = saveTasksToArray();
-	localStorage.setItem('MyTodo-listApp', JSON.stringify(savingTasks));
-}
+gi;
